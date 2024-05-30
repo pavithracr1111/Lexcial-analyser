@@ -1,0 +1,12 @@
+PURPOSE OF THE PROJECT
+
+The main purpose/goal of the project is to take in a c file, .c, and produce the sequence of
+tokens that can be used for the next stage in compilation.
+
+SCOPE OF THE PROJECT
+
+Lexical Analyzer will be a small product demonstrating the use of C language. It will
+assume the source program stores in a file which will be accessed using the file operations and also
+assuming that the input is taken from the output of the preprocessor. It is designed only for the C
+language, not for any other language. It will not be using any optimal data structures or algorithms
+in the initial versions.
