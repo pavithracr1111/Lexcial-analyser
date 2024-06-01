@@ -29,7 +29,7 @@ Token get_next_token(FILE *file)
 {
     Token token;
     token.type = UNKNOWN;
-    int ch;
+    char ch;
 
     while ((ch = fgetc(file)) != EOF)
     {
@@ -154,6 +154,7 @@ Status check_Operation(char *filename, lexical_analyser *LA)
 Status open_file(char *argv, lexical_analyser *LA)
 {
     LA->fptr_fname = fopen(LA->Filename, "r");
+
     if (LA->fptr_fname == NULL)
     {
         fprintf(stderr, "Failed to open .c file\n");
